@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
     <title>Treino de Divs</title>
 </head>
 
 <body>
     <div class="d1">
-        <div class="form">
-        <h1>Login</h1>
-        <div class="center">
-            <input type="text" placeholder="Informe seu login">
-            <input type="text" placeholder="Informe sua senha">
-            <button>Entrar</button>
-        </div>
-        <p>Não é registrado? <a href="https://github.com/Fillpss" target="_blank">Cadastre-se</a></p>
-        </div>
+        <form class="form" method="get" action="/main.html">
+            <h1>Login</h1>
+            <div class="center">
+                <input type="text" placeholder="Informe seu login" id="login">
+                <input type="password" placeholder="Informe sua senha" id="password">
+                <input type="submit" id="send" value="Enviar"></input>
+            </div>
+            <p>Não é registrado? <a href="https://github.com/Fillpss" target="_blank">Cadastre-se</a></p>
+        </form>
+        <button id="changeBG" class="teste">Modo Escuro</button>
     </div>
 </body>
 </html>
